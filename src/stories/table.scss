@@ -1,0 +1,63 @@
+@import '../color.scss';
+
+table {
+	border-collapse: collapse;
+}
+
+.table-wrapper th {
+  background-color: $primary-light;
+  text-align: left;
+  height: 35px;
+  border-spacing: 0;
+  padding: 0;
+  font-size: 12px;
+}
+
+.table-wrapper td {
+  background-color: $bg-white;
+  height: 50px;
+  font-size: 12px;
+ 
+}
+
+.table-wrapper {
+  width: 1000px;
+}
+
+.table-header-bg {
+  background-color: $primary-light !important;
+  width: 100%;
+  img {
+    vertical-align: middle;
+    padding: 0 8px;
+ }
+}
+
+td img {
+  padding: 10px 10px;
+}
+
+.image-box {
+  width: 40px;
+  height: 40px;
+  background-color: $primary-main;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.spacing-bottom {
+  border-bottom: 1px solid white;
+  filter: drop-shadow(2px 3px 3px $bg-gray);
+}
+
+.container {
+  border-collapse: separate;
+  border-spacing: 0 5px;
+  position: absolute;
+  top: 148px;
+  left: 358px;
+}

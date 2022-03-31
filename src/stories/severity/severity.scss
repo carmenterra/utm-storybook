@@ -1,0 +1,40 @@
+@import "../../color";
+
+@mixin parameter-box($background-color) {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  background-color: $background-color;
+}
+
+.severity {
+    display: flex;
+
+    .square-level0 {
+      @include parameter-box($gray);
+    }
+
+    .square-level1 {
+      @include parameter-box($yellow-main);
+    }
+
+    .square-level2 {
+      @include parameter-box($orange-main);
+    }
+
+    .square-level3 {
+       @include parameter-box($pink-main);
+    }
+
+    .square-level4 {
+      @include parameter-box($red-main);
+    }
+}
+
+
+
+
+
+
+

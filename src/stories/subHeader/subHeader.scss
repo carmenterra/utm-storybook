@@ -1,0 +1,70 @@
+@import '../../color.scss';
+@import "../../spacing";
+
+
+.subHeader-bg {
+    padding-left: 10px;
+    background-color: $bg-white;
+    //position: absolute;
+    width: 1016px;
+    height: 80px;
+    //left: 350px;
+    //top: 0px;
+    border-bottom: 1px solid $bg-gray;
+    
+
+    .main-header {
+        line-height: 80px;
+        display: flex;
+        justify-content: space-between;
+        .icon-color {
+            color: $primary-main;
+            @include spacing-LR-8;
+            a {
+                color: black;
+                padding-left: 8px;
+                padding-right: 8px;
+            }
+        }
+        img {
+            vertical-align: middle;
+            padding: 0 8px;
+        }
+    }
+}
+
+    .sub-header {
+        line-height: 60px;
+        display: flex;
+        justify-content: space-between;
+        .search {
+            color: $primary-main;
+            input {
+                margin: 8px;
+                padding: 10px 15px;
+                transition: 0.3s;
+                border: 1px solid $bg-gray;
+                border-radius: 4px;
+                outline: none;
+                &:focus {
+                    border: 2px solid $primary-main;
+                }
+            }
+        }
+        .icon-color {
+            color: $primary-main;
+            @include spacing-LR-8;
+            a, span {
+                color: black;
+                padding-left: 8px;
+               
+            }
+        }
+        img {
+            vertical-align: middle;
+            padding: 0 8px;
+        }
+        a {
+            color: $primary-main;
+        }
+    }

@@ -1,0 +1,39 @@
+
+@import '../color';
+
+
+.utm-button {
+    font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 1;
+  }
+  .utm-button--primary {
+    color: white;
+    background-color: $puple-main;
+  }
+  .utm-button--secondary {
+    color: $text-white;
+    background-color: $bg-gray;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 0px 1px inset;
+  }
+  .active {
+    color: white;
+    background-color: $puple-sub;
+  }
+  .utm-button--small {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+  .utm-button--medium {
+    font-size: 14px;
+    padding: 11px 20px;
+  }
+  .utm-button--large {
+    font-size: 16px;
+    padding: 12px 24px;
+  }
+  

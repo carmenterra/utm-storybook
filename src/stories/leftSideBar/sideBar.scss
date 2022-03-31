@@ -1,0 +1,67 @@
+@import "../../color";
+@import "../../spacing";
+
+
+//leftsidebar's row size
+@mixin item($color) {
+    width: 160px;
+    height: 40px;
+    background-color: $color;
+}
+
+.sidebar-title {
+    width: 160px;
+    height: 80px;
+    background-color: $bg-white;
+    span{
+        line-height: 80px;
+        font-size: 18px;
+        padding-left: 8px;
+        font-weight: bold;
+        color: $primary-main;
+    }
+}
+
+.sidebar-item {
+    @include item($bg-white);
+    @include spacing-8;
+    padding-left: 8px;
+    .item-center {
+        line-height: 40px;
+        color: $text-gray;
+    }
+    &:active, :hover {
+        color: $primary-main;
+    }
+    a {
+        padding-left: 8px;
+    }
+}
+
+.sidebar-fotter {
+    @include item($bg-white);
+    border-top: 2px solid $bg-gray;
+    .item-center {
+        justify-content: flex-end;
+        line-height: 40px;
+        color: $text-gray;
+        padding-left: 8px;
+    }
+    &:active, :hover {
+        color: $text-white;
+        background-color: $bg-gray;
+    }
+    a {
+        padding-left: 8px;
+    }
+
+}
+
+.sidebar-item-wrapper {
+    height: 100vh;
+}
+
+.sidebar-item-wrapper {
+    justify-content: flex-end;
+}
+

@@ -1,0 +1,18 @@
+@import "../../color";
+@import "../../spacing";
+
+.outlined_btn {
+    color: $primary-main;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s ease;
+    border:2px solid $primary-main;
+    padding:5px 15px;
+    font-weight: bold;
+    margin: 8px;
+    &:hover{
+        background:$primary-main;
+        color:#fff;
+        transition: .3s ease;
+    }
+}

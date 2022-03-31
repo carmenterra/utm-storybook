@@ -1,0 +1,137 @@
+@import "../../color";
+@import "../../spacing";
+
+body{
+	margin: 0px;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	line-height: 15pt;
+}
+.tab-bg {
+	position: absolute;
+    width: 190px;
+    height: 100vh;
+    background: $primary-light;
+    filter: drop-shadow(1px 1px 2px $bg-gray);
+    height: 100%;
+	.header {
+        display: block;
+        position: absolute;
+        width: 190px;
+        height: 80px;
+        line-height: 80px;
+        border-bottom: 1px solid $bg-gray;
+        .header-item {
+            display: inline-block;
+            a {
+                padding-left: 8px;
+            }
+            img {
+                vertical-align: middle;
+                padding-left: 24px;
+            }
+        }
+    }
+}
+.tab-list {
+	position: absolute;
+	top: 80px;
+	left: 0;
+		h3 {
+			padding-left: 8px;
+			margin: 10px 0;
+		}
+	ul {
+		list-style-type: none;
+		.tab {
+			width: 150px;
+			height: 100px;
+			background-color: $primary-light;
+			margin-bottom: 8px;
+
+			&:hover {
+				background-color: $bg-white;
+				filter: drop-shadow(0px 1px 2px $bg-gray);
+			}
+
+			&:active {
+				background-color: $bg-white;
+				filter: drop-shadow(0px 1px 2px $bg-gray);
+			}
+		}
+
+		li {
+			text-align: left;
+			line-height: 30px;
+			a {
+				display: block;
+				padding-top: 30px;
+				padding-left: 8px;
+			}
+			p {
+				font-size: 8px;
+				margin-top: 3px;
+				padding-left: 8px;
+			}
+		}
+	}
+}
+/*---------- vertical tab nav */
+#vertical_tab_nav{
+	display: block;
+	width: 100%;
+}
+#vertical_tab_nav ul{
+	display: block;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	overflow: hidden;
+	width: 30%;
+  border-radius: 10px 0 0 10px;
+  background: #555;
+}
+#vertical_tab_nav li{
+	border-bottom: 1px solid #000;
+  	margin-bottom: 1px;
+	text-align: left;
+	padding: 0px;
+}
+#vertical_tab_nav li:last-child{
+	margin-bottom: 0px;
+  border-bottom: 0px;
+}
+#vertical_tab_nav li a{
+	display: block;
+	font-size: 14pt;
+	color: #fff;
+	text-decoration: none;
+	padding: 7%;
+	background: black;
+  background: -webkit-linear-gradient(top,#444,#333);
+  background: -moz-linear-gradient(top,#444,#333);
+}
+#vertical_tab_nav li a.selected{
+	background: #fff;
+	color: #000;
+}
+#vertical_tab_nav div{
+	display: block;
+	float: left;
+	background: #fff;
+	background: #fff;
+	width:64%;
+	min-height: 500px;
+	padding: 10px 3% 3% 3%;
+  border-radius: 0 10px 10px 0;
+}
+#vertical_tab_nav div article{
+	display: none;
+	margin: 0px;
+	color: #555;
+	
+}
+#vertical_tab_nav div article p{
+	margin: 0px 0px 20px 0px;
+}

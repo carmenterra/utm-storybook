@@ -1,0 +1,130 @@
+@import "../color";
+
+@mixin leftsidebar-item($color) {
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    background-color: $color;
+}
+
+.wrapper {
+    height: 100%;
+}
+
+.leftSideBar-wrapper {
+    position: absolute;
+    width: 160px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: $bg-white;
+
+    .header {
+        display: block;
+        position: absolute;
+        width: 160px;
+        height: 80px;
+        background-color: white;
+        h3 {
+            color: $primary-main;
+            padding-left: 8px;
+        }
+    }
+
+    .main {
+        background-color: $primary-main;
+        position: absolute; 
+        top: 80px;
+
+        .gray-img {
+            color: $text-gray;
+            padding: 5px;
+        }
+        
+        ul.sidenav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 160px;
+            background-color: $bg-white;
+            position: relative;
+            overflow: auto;
+        }
+
+        ul.sidenav li img {
+            vertical-align: middle;
+            //filter: invert(69%) sepia(0%) saturate(0%) hue-rotate(31deg) brightness(100%) contrast(93%);
+            //filter: invert(46%) sepia(57%) saturate(1101%) hue-rotate(201deg) brightness(102%) contrast(102%);
+        }
+       
+
+        ul.sidenav li a {
+            display: inline-block;
+            color: $text-gray;
+            padding: 8px ;
+            text-decoration: none;
+        }
+        ul.sidenav li span:hover:not(.active) {
+            color: $primary-main;
+        }
+        ul.sidenav li a.active {
+            background-color: $bg-white;
+            color: $primary-main;
+        }
+        ul.sidenav li a:hover:not(.active) {
+            background-color: $bg-white;
+            color: $primary-main;
+        }
+        div.content {
+            margin-left: 25%;
+            padding: 1px 16px;
+            height: 1000px;
+        }
+        @media screen and (max-width: 900px) {
+            ul.sidenav {
+                width: 100%;
+                height: auto;
+                position: relative;
+            }
+            ul.sidenav li a {
+                float: left;
+                padding: 15px;
+            }
+            div.content {
+                margin-left: 0;
+            }
+        }
+        @media screen and (max-width: 480px) {
+            ul.sidenav li a {
+                text-align: center;
+                float: none;
+            }
+        }
+    }
+
+    .footer {
+        position: absolute;
+        background-color: $bg-white;
+        color: $text-gray;
+        bottom: 0px;
+        width:  160px;
+        height: 40px;
+        line-height: 40px;
+        &:hover {
+            background-color: $primary-light;
+            color: $primary-main;
+        }
+        .fa-brands {
+            padding: 5px 7px 0 7px;
+          }
+
+        img {
+            vertical-align: middle;
+            margin: 5px;
+            filter: invert(69%) sepia(0%) saturate(0%) hue-rotate(31deg) brightness(100%) contrast(93%);
+        }
+    }
+
+}
+
+

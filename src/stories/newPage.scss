@@ -1,0 +1,14 @@
+@import "../color";
+
+.wrapper-all {
+    width: 100%;
+    height: 100%;
+    position: relative;
+} 
+
+.pagination-position {
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+}
+

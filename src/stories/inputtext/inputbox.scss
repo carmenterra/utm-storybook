@@ -1,0 +1,10 @@
+@import "../../color";
+@import "../../spacing";
+
+.MenuItem {
+    color: black;
+  }
+  /* Increase the specificity */
+.MenuItem.Mui-filed {
+    color: pink;
+}

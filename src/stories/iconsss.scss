@@ -1,0 +1,32 @@
+@import '../color';
+
+/* Font Awesomeを使用しています。*/
+.share-lists {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .share-list:nth-child(n + 2) {
+    margin: 0 0 0 16px;
+  }
+  
+  .share-icon {
+    width: 30px;
+    height: 30px;
+    padding: 14px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  .fa-twitter {
+    background: rgb(0, 172, 238);
+  }
+  
+  .fa-facebook-f {
+    background: rgb(24, 119, 242);
+  }
